@@ -13,12 +13,24 @@
 		margin:0 auto;
 	}		
 	</style>
+
+	<script type="text/javascript">
+		function test()
+		{
+			alert("Brand Name: Titan; Type: Wter Restistant; Price:Rs.2000");
+			return true;
+		}
+	</script>
 </head>
 <body>
  
 	<div class="demo" style="background: linear-gradient(#ffffff, #ada996);">
 
-<span style="position: absolute; text-align: center; font-size: 140px;">Background</span>
+<form onsubmit="return test()">
+<button id="test" slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
+          👋 Activate AR
+      </button>
+</form>
 
 <model-viewer src="assets/CHAHIN_BOTTLE_OF_SODA.gltf" alt="A CHAHIN_BOTTLE_OF_SODA" camera-controls auto-rotate ar ios-src="assets/CHAHIN_BOTTLE_OF_SODA.usdz" style="background-color: unset;">
 
